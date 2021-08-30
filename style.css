@@ -6,6 +6,7 @@
 
 .header {
   overflow: hidden;
+  grid-column: 1 / -1;
   border-bottom: 1px solid turquoise;
 }
 .p-header {
@@ -15,7 +16,33 @@
 }
 
 .image {
-  width: 400px;
-  height: 450px;
+  width: 70%;
   border: 1px solid turquoise;
+}
+
+p {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-rows: 100px auto 100px;
+}
+
+footer {
+  grid-column: 1 / -1;
+}
+
+@media screen and (max-width: 500px) {
+  .image-sec {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+  .bio-sec {
+    grid-column: 1 / -1;
+  }
+  .container {
+    grid-template-rows: 100px auto auto 100px;
+  }
 }

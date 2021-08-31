@@ -50,18 +50,6 @@ footer {
   }
 }
 
-a:link {
-  color: purple;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: none;
-}
-
 .link-footer {
   border: 100px;
 }

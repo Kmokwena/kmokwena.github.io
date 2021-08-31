@@ -57,3 +57,12 @@ footer {
 footer > div > a {
   padding: 0rem 2rem;
 }
+
+a {
+  color: orange;
+  text-decoration: none;
+}
+
+a:hover {
+  color: turquoise;
+}

@@ -32,6 +32,7 @@ p {
 
 footer {
   grid-column: 1 / -1;
+  text-align: center;
 }
 
 @media screen and (max-width: 500px) {
@@ -45,4 +46,20 @@ footer {
   .container {
     grid-template-rows: 100px auto auto 100px;
   }
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+ul.no-bullets {
+  list-style-type: none;
 }

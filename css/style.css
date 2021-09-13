@@ -1,23 +1,27 @@
 .body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: cursive;
   font-size: 20px;
+  background-color: plum;
 }
 
 .header {
-  overflow: hidden;
   grid-column: 1 / -1;
-  border-bottom: 1px solid turquoise;
+  border-bottom: 1px solid gray;
+
+  box-sizing: border-box;
 }
+
 .p-header {
   text-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
 }
 
 .image {
   width: 70%;
-  border: 1px solid turquoise;
+  border: 1px solid purple;
+  border-radius: 90%;
 }
 
 p {
@@ -34,7 +38,7 @@ p {
 footer {
   grid-column: 1 / -1;
   text-align: center;
-  border-top: turquoise 1px solid;
+  border-top: gray 1px solid;
   padding-top: 5px;
 }
 
@@ -60,14 +64,19 @@ footer > div > a {
 }
 
 a {
-  color: orange;
+  color: yellow;
   text-decoration: none;
 }
 
 a:hover {
-  color: turquoise;
+  color: red;
 }
 
 h4 {
+  text-align: center;
+}
+
+h2 {
+  font-family: "MedievalSharp", cursive;
   text-align: center;
 }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../Images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Kele Mokwena</title>
+    <script
+      src="https://kit.fontawesome.com/e5caba0a64.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      function openSlideMenu() {
+        document.getElementById("menu").style.width = "250px";
+        document.getElementById("content").style.marginLeft = "250px";
+      }
+      function closeSlideMenu() {
+        document.getElementById("menu").style.width = "0";
+        document.getElementById("content").style.marginLeft = "0";
+      }
+    </script>
+  </head>
+  <body class="body">
+    <div class="background">
+      <main class="container">
+        <header>
+          <div id="content">
+            <span class="slide">
+              <a href="#" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i
+              ></a>
+            </span>
+            <div id="menu" class="nav">
+              <a href="#" onclick="closeSlideMenu()">
+                <i class="fas fa-times"></i
+              ></a>
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../templates/skills.html">Skills</a></li>
+                <li><a href="../templates/portfolio.html">Portfolio</a></li>
+              </ul>
+            </div>
+          </div>
+        </header>
+        <div class="image-sec">
+          <img src="../Images/kelePic.jpg" alt="Profile Photo" class="image" />
+        </div>
+
+        <section class="bio-sec">
+          <p class="p-portfolio">No projects yet.😥</p>
+        </section>
+        <section>
+          <p class="p-contact">
+            <b>
+              This is where I can be contacted. <br /><br />
+              <img
+                src="../Images/email.png"
+                alt="email adress"
+                width="50"
+                height="50"
+              />
+              mokwenakw@gmail.com <br />
+              <br />
+              <img
+                src="../Images/whatsapp.png"
+                alt="phone number"
+                width="50"
+                height="50"
+              />
+              078 685 6323</b
+            >
+          </p>
+        </section>
+      </main>
+      <footer>
+        <div class="link-footer">
+          <a href="https://www.facebook.com/palesa.young.love.mokwena">
+            <img
+              src="../Images/facebook.png"
+              alt="Facebook link"
+              height="50"
+              width="50"
+            />
+          </a>
+          <a href="https://twitter.com/Kelz_Mokwena">
+            <img
+              src="../Images/twitter.png"
+              alt="Twitter link"
+              height="50"
+              width="50"
+          /></a>
+          <a href="https://www.linkedin.com/in/kelebogile-mokwena-950b30166/"
+            ><img
+              src="../Images/linkedin.png"
+              alt="Linkedin link"
+              height="50"
+              width="50"
+            />
+          </a>
+          <a href="https://github.com/Kmokwena">
+            <img
+              src="../Images/github.png"
+              alt="Github link"
+              width="50"
+              height="50"
+          /></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

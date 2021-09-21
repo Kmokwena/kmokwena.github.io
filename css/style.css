@@ -1,19 +1,23 @@
 .body {
   margin: 0;
   font-family: cursive;
-  font-size: 20px;
-  background-color: plum;
+  font-size: 25px;
+}
+.background {
+  background-image: url("../Images/background-bonding.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
-.header {
+header {
   grid-column: 1 / -1;
   border-bottom: 1px solid gray;
-
-  box-sizing: border-box;
+  padding-bottom: 5px;
 }
 
 .p-header {
-  text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 40px;
 }
@@ -21,7 +25,7 @@
 .image {
   width: 70%;
   border: 1px solid purple;
-  border-radius: 90%;
+  border-radius: 50%;
 }
 
 p {
@@ -62,14 +66,13 @@ footer {
 footer > div > a {
   padding: 0rem 2rem;
 }
-
 a {
   color: yellow;
   text-decoration: none;
 }
 
 a:hover {
-  color: red;
+  color: palevioletred;
 }
 
 h4 {
@@ -79,4 +82,50 @@ h4 {
 h2 {
   font-family: "MedievalSharp", cursive;
   text-align: center;
+}
+
+.nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2d312d;
+  opacity: 0.9;
+  transition: 0.7s;
+  overflow-x: hidden;
+}
+.nav ul {
+  padding: 0;
+}
+
+.nav a {
+  display: block;
+  padding: 20px 30px;
+  font-size: 25px;
+}
+.slide a {
+  font-size: 36px;
+}
+
+#content {
+  padding: 20px;
+}
+
+.p-portfolio {
+  left: 0;
+  line-height: 200px;
+  margin-top: -100px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 90%;
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.p-contact {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
 }

@@ -1,7 +1,7 @@
 .body {
   margin: 0;
-  font-family: cursive;
-  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
 }
 .background {
   background-image: url("../Images/background-bonding.jpg");
@@ -128,4 +128,8 @@ h2 {
 .p-contact {
   font-family: "Times New Roman", Times, serif;
   font-size: 40px;
+}
+
+.p-white {
+  color: white;
 }

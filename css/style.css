@@ -1,7 +1,7 @@
 .body {
   margin: 0;
   font-family: "Times New Roman", Times, serif;
-  font-size: 30px;
+  font-size: 2rem;
 }
 .background {
   background-image: url("../Images/background-bonding.jpg");
@@ -15,11 +15,6 @@ header {
   grid-column: 1 / -1;
   border-bottom: 1px solid gray;
   padding-bottom: 5px;
-}
-
-.p-header {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 40px;
 }
 
 .image {
@@ -46,6 +41,10 @@ footer {
   padding-top: 5px;
 }
 
+.link-footer > div > a > img {
+  width: 2.5rem;
+}
+
 @media screen and (max-width: 500px) {
   .image-sec {
     grid-column: 1 / -1;
@@ -57,15 +56,39 @@ footer {
   .container {
     grid-template-rows: 100px auto auto 100px;
   }
+  .link-footer > a > img {
+    width: 1rem;
+  }
+  .body {
+    font-size: 1rem;
+  }
 }
 
 .link-footer {
   border: 100px;
 }
 
-footer > div > a {
+.contact-footer > a {
   padding: 0rem 2rem;
+  color: skyblue;
+  display: inline-block;
 }
+
+.contact-footer {
+  display: block;
+  padding-bottom: 1rem;
+}
+
+.social-footer {
+  display: block;
+}
+
+.social-footer > a {
+  padding: 0rem 2rem;
+  color: skyblue;
+  display: inline-block;
+}
+
 a {
   color: yellow;
   text-decoration: none;
@@ -114,21 +137,9 @@ h2 {
   padding: 20px;
 }
 
-.p-portfolio {
-  left: 0;
-  line-height: 200px;
-  margin-top: -100px;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  width: 90%;
-  font-size: 40px;
-  font-family: "Times New Roman", Times, serif;
-}
-
 .p-contact {
   font-family: "Times New Roman", Times, serif;
-  font-size: 40px;
+  font-size: 3rem;
 }
 
 .p-white {

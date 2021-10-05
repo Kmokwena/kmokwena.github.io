@@ -1,9 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
 .body {
   margin: 0;
   font-family: "Times New Roman", Times, serif;
   font-size: 2rem;
-}
-html {
+  overflow: auto;
   background-image: url("../Images/background-bonding.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,11 +19,12 @@ header {
   grid-column: 1 / -1;
   border-bottom: 1px solid gray;
   padding-bottom: 5px;
+  margin-top: 1px;
 }
 
 .image {
-  width: 55%;
-  border: 1px solid purple;
+  width: 80%;
+  border: 2px solid yellow;
   border-radius: 50%;
 }
 
@@ -31,8 +35,15 @@ p {
 
 .container {
   display: grid;
-  grid-template-columns: 2fr 2fr 1fr;
-  grid-template-rows: 100px auto 100px;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 70px auto 120px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.cv-sec {
+  display: flex;
+  justify-content: flex-end;
 }
 
 footer {
@@ -47,6 +58,13 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+  .container {
+    grid-template-rows: 70px auto auto 120px;
+    grid-template-columns: 1fr;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
   .image-sec {
     grid-column: 1 / -1;
     text-align: center;
@@ -54,12 +72,31 @@ footer {
   .bio-sec {
     grid-column: 1 / -1;
   }
-  .container {
-    grid-template-rows: 100px auto auto 100px;
-  }
+
   .link-footer > div > a > img {
     width: 1rem;
   }
+
+  .contact-footer > a {
+    font-size: 1rem;
+  }
+  section > .p-skills {
+    box-sizing: border-box;
+    border: 5px solid purple;
+    position: relative;
+    left: 10px;
+    width: 200px;
+    padding: 5px;
+    height: 40px;
+    background-color: seagreen;
+    text-align: center;
+    margin: 0;
+  }
+  .cv-sec {
+    display: flex;
+    justify-content: center;
+  }
+
   .body {
     font-size: 1rem;
   }
@@ -73,7 +110,7 @@ footer {
   padding: 0rem 2rem;
   color: skyblue;
   display: inline-flex;
-  font-size: 1.8rem;
+  font-size: 8 1rem;
 }
 
 .contact-footer {
@@ -103,6 +140,8 @@ a:hover {
 h4 {
   text-align: center;
   color: yellow;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 h2 {
@@ -147,4 +186,15 @@ h2 {
 
 .p-white {
   color: white;
+  margin-top: 0;
+}
+
+.p-skills {
+  box-sizing: border-box;
+  border: 5px solid purple;
+
+  width: 11rem;
+  height: 7rem;
+  padding: 1px;
+  background-color: seagreen;
 }

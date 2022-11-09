@@ -198,3 +198,10 @@ h2 {
   padding: 1px;
   background-color: seagreen;
 }
+
+.icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  font-size: 48px;
+}

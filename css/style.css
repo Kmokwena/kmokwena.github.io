@@ -185,7 +185,7 @@ button {
   padding: 4px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 540px) {
   .container {
     grid-template-rows: 70px auto auto 120px;
     grid-template-columns: 1fr;
@@ -227,10 +227,11 @@ button {
   }
   .icons {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
     font-size: 48px;
     color: #fff;
+    row-gap: 15px;
   }
 
   button {
@@ -239,6 +240,7 @@ button {
     color: #fff;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
     border: none;
-    width: 33vw;
+    width: 41vw;
+    text-align: center;
   }
 }

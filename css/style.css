@@ -11,7 +11,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
   background-attachment: fixed;
 }
 
@@ -57,51 +56,6 @@ footer {
   width: 2.5rem;
 }
 
-@media screen and (max-width: 500px) {
-  .container {
-    grid-template-rows: 70px auto auto 120px;
-    grid-template-columns: 1fr;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-  }
-  .image-sec {
-    grid-column: 1 / -1;
-    text-align: center;
-  }
-  .bio-sec {
-    grid-column: 1 / -1;
-  }
-
-  .link-footer > div > a > img {
-    width: 1rem;
-  }
-
-  .contact-footer > a {
-    font-size: 1rem;
-  }
-  section > .p-skills {
-    box-sizing: border-box;
-    border: 5px solid purple;
-    position: relative;
-    left: 10px;
-    width: 200px;
-    padding: 5px;
-    height: 40px;
-    background-color: seagreen;
-    text-align: center;
-    margin: 0;
-  }
-  .cv-sec {
-    display: flex;
-    justify-content: center;
-  }
-
-  .body {
-    font-size: 1rem;
-  }
-}
-
 .link-footer {
   border: 100px;
 }
@@ -140,7 +94,7 @@ a:hover {
 h4 {
   text-align: center;
   color: yellow;
-  margin-top: 1px;
+  margin-top: 2px;
   margin-bottom: 1px;
   font-family: "MedievalSharp", cursive;
 }
@@ -193,7 +147,6 @@ h2 {
 .p-skills {
   box-sizing: border-box;
   border: 5px solid purple;
-
   width: 11rem;
   height: 7rem;
   padding: 1px;
@@ -203,7 +156,89 @@ h2 {
 .icons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 20px;
   font-size: 48px;
   color: #fff;
+}
+button {
+  font-size: 24px;
+  background-color: transparent;
+  color: #fff;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+  border: none;
+  width: 15vw;
+}
+
+.project-container {
+  background-image: url("../Images/memory\ game\ shot.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  height: 200px;
+  width: 420px;
+  gap: 1px;
+}
+.project-wording {
+  height: 50px;
+  width: 310px;
+  font-size: 20px;
+  padding: 4px;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    grid-template-rows: 70px auto auto 120px;
+    grid-template-columns: 1fr;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  .image-sec {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+  .bio-sec {
+    grid-column: 1 / -1;
+  }
+  .link-footer > div > a > img {
+    width: 1rem;
+  }
+  .contact-footer > a {
+    font-size: 1rem;
+  }
+  section > .p-skills {
+    box-sizing: border-box;
+    border: 5px solid purple;
+    position: relative;
+    left: 10px;
+    width: 200px;
+    padding: 5px;
+    height: 40px;
+    background-color: seagreen;
+    text-align: center;
+    margin: 0;
+  }
+  .cv-sec {
+    display: flex;
+    justify-content: center;
+  }
+  .body {
+    font-size: 1rem;
+  }
+  .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    font-size: 48px;
+    color: #fff;
+  }
+
+  button {
+    font-size: 24px;
+    background-color: transparent;
+    color: #fff;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+    border: none;
+    width: 33vw;
+  }
 }
